@@ -1,0 +1,331 @@
+:root {
+	--header-bg: #e74c3c;
+	--white-color: #fff;
+	--hover-color: #c0392b;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+section {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+h2.sec-head {
+	text-transform: capitalize;
+	color: #000;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+h2.sec-head:after {
+	content: '';
+	background: #e74c3c;
+	width: 100px;
+	height: 3px;
+	display: block;
+	margin: 20px auto;
+}
+a {
+	text-decoration: none;
+}
+img {
+	width: 100%;
+}
+
+/*!******************************** THIS STYLE IS HEADER **************************************************/
+#header {
+	color: var(--white-color);
+	background: var(--header-bg);
+}
+
+ul.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	justify-content: right;
+}
+
+ul.menu a {
+	display: block;
+	padding: 10px 15px;
+	color: var(--white-color);
+	transition: 0.3s;
+}
+
+ul.menu li:hover a {
+	background: var(--hover-color);
+}
+
+/*!******************************** THIS STYLE IS BANNER **************************************************/
+#banner {
+	background: url(../img/banner1.jpeg) no-repeat;
+	background-size: cover;
+	background-position: center 60%;
+}
+.banner-title {
+	padding-bottom: 2rem;
+}
+
+.banner-title h2 {
+	background: rgba(255, 255, 255, 0.8);
+	text-transform: capitalize;
+	margin: 0;
+	padding: 10px;
+	display: inline-block;
+}
+
+.banner-title p {
+	background: rgba(231, 76, 60, 0.7);
+	color: #fff;
+	padding: 10px;
+	font-size: 15px;
+}
+
+/*!******************************** THIS STYLE IS SERVICE **************************************************/
+
+.services-box {
+	text-align: center;
+	text-transform: capitalize;
+}
+.services-box i {
+	font-size: 70px;
+	color: #e74c3c;
+	margin-bottom: 15px;
+}
+
+/*!******************************** THIS STYLE IS TESTIMONIALS **************************************************/
+
+#testimonials {
+	background: url(../img/testomonial.jpeg) no-repeat;
+	background-size: cover;
+	background-position: left 58%;
+	position: relative;
+}
+section#testimonials:before {
+	background: rgba(52, 73, 94, 0.4);
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+.testimonial {
+	color: #fff;
+}
+
+.testimonial-img {
+	width: 10%;
+	height: 10%;
+}
+.testimonial-img img {
+	border-radius: 50%;
+}
+
+.author h6 {
+	margin: 2px 0px;
+}
+
+/*!******************************** THIS STYLE IS RECENT POST ***********************************************/
+
+.recent-post img:hover {
+	transform: scale(1.1);
+}
+
+.recent-post img {
+	transition: 3.3s;
+}
+
+.recent-post {
+	overflow: hidden;
+}
+.recent-post h4 a {
+	color: #e74c3c;
+	cursor: pointer;
+	text-transform: capitalize;
+}
+
+.recent-post h4 {
+	margin: 0;
+	padding: 10px 0px;
+	font-size: 1.35rem;
+}
+
+.post-date i {
+	margin-right: 5px;
+}
+
+.post-date {
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+
+.recent-post p {
+	font-size: 19px;
+}
+
+a.read-more {
+	letter-spacing: 0.5px;
+	color: #e74c3c;
+	cursor: pointer;
+	font-size: 17px;
+	transition: 0.5s;
+}
+a.read-more:hover {
+	color: #2c3e50;
+}
+
+/*!******************************** THIS STYLE IS FOOTER ***********************************************/
+.main-footer {
+	background: #34495e;
+	color: #fff;
+	padding: 30px 0px;
+}
+
+.footer-widget h4:after {
+	content: '';
+	background: #fff;
+	width: 55px;
+	height: 2px;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+ul.news-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.news-list li {
+	padding: 5px 0px;
+}
+
+ul.news-list a {
+	color: #fff;
+}
+
+ul.news-list li i {
+	padding-right: 5px;
+	color: #fff;
+}
+
+.footer-widget address {
+	margin: 0;
+	line-height: 2;
+}
+
+div#copyright {
+	background: #2c3e50;
+	padding: 20px 0px;
+	color: #fff;
+}
+
+.footer-icon ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	justify-content: right;
+}
+
+.footer-icon ul li a {
+	color: #fff;
+	display: block;
+	padding: 0px 15px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.footer-icon i {
+	font-size: 1.5rem;
+}
+
+.footer-icon ul li:hover a {
+	color: #afafaf;
+}
+
+/*!******************************** THIS STYLE IS SCROLL-UP ***********************************************/
+
+.scroll-up {
+	transform: translate(91%, -30%);
+	display: none;
+}
+
+.scroll-up button {
+	background: #e74c3c;
+	border: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+.scroll-up button i {
+	color: #fff;
+	font-size: 18px;
+}
+
+/*!******************************** THIS STYLE IS CUSTOM RESPONSIVE ***********************************************/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	.news-list li:first-child,
+	.news-list li:last-child {
+		display: none;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	.news-list li:first-child,
+	.news-list li:last-child {
+		display: none;
+	}
+	.banner-title,
+	.testimonial,
+	.testimonial-img {
+		text-align: center;
+		margin: auto;
+	}
+	.recent-post:nth-child(odd) {
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.news-list li:first-child,
+	.news-list li:last-child {
+		display: none;
+	}
+	.banner-title,
+	.testimonial,
+	.testimonial-img {
+		text-align: center;
+		margin: auto;
+	}
+	.recent-post:nth-child(odd) {
+		margin-bottom: 20px;
+	}
+	.logo,
+	.menu {
+		text-align: center;
+	}
+	.services-box {
+		margin-bottom: 40px;
+	}
+	.footer-widget {
+		border-bottom: 1px solid #545c64;
+		opacity: 0.7;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.footer-widget h4:after {
+		display: none;
+	}
+	#footer {
+		text-align: center;
+	}
+	.footer-icon ul {
+		justify-content: center;
+		margin-top: 20px;
+	}
+	section {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
